@@ -1,0 +1,362 @@
+/* Общие стили для всего тела страницы */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+
+  background-color: #f0f0f0; /* светлый фон */
+  color: #333; /* цвет текста */
+}
+
+/* Шапка сайта */
+.header {
+  background: linear-gradient(to bottom ,#222, #252525 , #303030 ,#363636,#3a3a3a,#b1afaf,#fff);
+  
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'GotHeroin'; /* название шрифта, которое будете использовать в CSS */
+  src: url('шрифты/Got_Heroin.ttf') format('truetype');
+  src: url('шрифты/raygun.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.header_img{
+  margin-left: -2.5%;
+  width: 12%;
+  margin-bottom: 1%;
+}
+.container_header1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+.header_text1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header_list {
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.header_item {
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.header_item:hover {
+  text-decoration: underline;
+}
+
+/* Заголовок и подзаголовок в шапке */
+.container_header2 {
+  margin-left: -64%;
+  margin-bottom: -4%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.header_title2 {
+  font-size: 48px;
+}
+
+.header_text2 {
+  font-size: 26px;
+}
+
+/* Основной контент */
+.main {
+  padding: 20px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#music-info {
+    position: fixed;
+    bottom: 60px; /* чуть выше футера, чтобы не перекрывать */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    display: none; /* по умолчанию скрыт */
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+#music-info.show {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#music-info .close-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+.main_title2{
+  margin-left: 43.5%;
+}
+/* Раздел "Популярное" */
+.main_section2 {
+  margin-bottom: 40px;
+}
+
+/* Контейнер для карточек/элементов */
+.container_main_au {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Для экранов шире 768px делаем горизонтальный макет */
+@media (min-width: 768px) {
+  .container_main_au {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/* Каждая карточка */
+.container_au1 {
+  background-color: #fafafa;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Изображение альбома или трека */
+.img_au1 {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Область с кнопкой и аудио */
+.au1_1 {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Кнопка для трека */
+.au1_btn {
+  padding: 10px;
+  background-color: #242424;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+.btn2_main{
+  padding: 8px;
+  background-color: #242424;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.au1_btn:hover {
+  background-color: #0056b3;
+}
+
+/* Оформление аудио элементов */
+.au1 {
+  width: 100%;
+}
+
+/* О нас секция */
+.main_section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container_main1 {
+  color: #ffffff;
+  background-image: url("Фото/фон.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width:1000px;
+  width: 1000px;
+}
+
+.main_img1 {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+#music-control-panel {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Подвал сайта */
+.footer {
+  background: linear-gradient(to top ,#222, #252525 , #303030 ,#363636,#3a3a3a,#b1afaf,#fff);
+  /*background: linear-gradient(to bottom ,#fff, #b1afaf,#3a3a3a,#363636, #303030, #252525,#222 );*/
+  background-color: #222;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.footer_list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.btn_footer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: inherit;
+  padding: 5px;
+  transition: opacity 0.3s;
+}
+
+.btn_footer:hover {
+  opacity: 0.7;
+}
+
+.footer_img {
+  width: 45px;
+  height: 45px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+/* Текст под иконками в футере */
+.footer_text1 {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .header{
+    height: 80px;
+    font-size: 9px;
+  }
+  .header_list{
+    display: inline;
+    padding: 5px;
+    text-align: center;
+  }
+  .header_img{
+    margin-left: -1%;
+  }
+  .header_item{
+    font-size: 80%;
+  }
+  .header_title2{
+    font-size: 13px;
+  }
+  .header_text2{
+    font-size: 80%;
+  }
+  .header_text1{
+    font-size: 13px;
+  }
+  .container_header2{
+    margin-right: 25%;
+  }
+
+
+
+  .main_title2{
+    margin-left: 38%;
+    font-size: 80%;
+  }
+  .container_au1{
+    width: 35%;
+    height: 50%;
+    flex: 1 1 35%; /* две карточки по 45%, чтобы было небольшое расстояние между ними */
+    max-width: 45%;
+  }
+  .au1_btn{
+    font-size: 8px;
+    height: 20%;
+  }
+  .container_main_au{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    gap: 7px;
+  }
+  .container_main1{
+    max-width: 100%;
+    background-size: contain;
+  }
+  
+
+
+
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "Pumpi",
+  "short_name": "Pumpi",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#222",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "Логотип/Логотип2 .5.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "Логотип/Логотип2 .55.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

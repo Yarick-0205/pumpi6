@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pumpi</title>
+    <link rel="stylesheet" href="style_favorites1.css">
+</head>
+<body class="body">
+<header class="header">
+    <div class="container_header1">
+        <p class="header_text1">Pumpi</p>
+        <ul class="header_list">
+            <a href="index.html"><li class="header_item">Главная</li></a>
+            <a href="favorites.html"><li class="header_item">Избранное</li></a>
+            <a href="history.html"><li class="header_item">История</li></a>
+        </ul>
+    </div>
+    <div class="container_header2">
+        <h2 class="header_title2">Услышь. Увидь. Проживи</h2>
+        <p class="header_text2">Пусть музыка живёт внутри вас.</p>
+    </div>
+</header>
+
+
+
+
+<main class="main">
+    <h1 class="main_title2">Мои избранные треки</h1>
+    <div id="favorites-container" class="favorites_container">
+        <!-- Здесь появятся тжщиртололреки -->
+    </div>
+    
+    <button class="btn_like">
+        <a href="index.html" >Назад</a>
+    </button>
+</main>
+
+
+
+
+
+<footer class="footer">
+    <ul class="footer_list">
+        <li class="footer_item">
+            <form action="index.html">
+                <button class="btn_footer">
+                    <img src="Фото/main.jpg" alt="Главная" class="footer_img" />
+                    
+                </button>
+            </form>
+        </li>
+        <li class="footer_item">
+            <form action="favorites.html">
+                <button class="btn_footer">
+                    <img src="Фото/like.png" alt="Избранное" class="footer_img" />
+                    
+                </button>
+            </form>
+        </li>
+        <li class="footer_item">
+            <form action="history.html">
+                <button class="btn_footer">
+                    <img src="Фото/history.jpg" alt="История" class="footer_img" />
+                    
+                </button>
+            </form>
+        </li>
+    </ul>
+</footer>
+
+<script>
+const tracksData = {
+    1: {
+        title: "Adam Gonte - I_Hate_Everything...",
+        src: "Музыка/Three_Days_Grace_-_I_Hate_Everything_About_You_47958582.mp3"
+    },
+    2: {
+        title: "In the End - Linkin Park",
+        src: "Музыка/Linkin_Park_-_In_The_End_47828874.mp3"
+    },
+    3: {
+        title: "Numb - Linkin Park",
+        src: "Музыка/Linkin_Park_-_Numb_47828673.mp3"
+    },
+    4: {
+        title: "Nirvana - Smells like teen spirit",
+        src: "Музыка/smells-like-teen-spirit.mp3"
+    }
+};
+
+function loadFavorites() {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    const container = document.getElementById('favorites-container');
+    container.innerHTML = '';
+
+    if (favorites.length === 0) {
+        container.innerHTML = '<p>Нет избранных треков.</p>';
+        return;
+    }
+
+    favorites.forEach((track, index) => {
+        const div = document.createElement('div');
+        div.className = 'favorite_track';
+        div.innerHTML = `
+            <h3>${track.title}</h3>
+            <audio controls>
+                <source src="${track.src}" type="audio/mpeg" />
+                Ваш браузер не поддерживает аудио.
+            </audio>
+            <button onclick="removeFromFavorites(${index})">Удалить из избранного</button>
+            <hr />
+        `;
+        container.appendChild(div);
+    });
+}
+
+function removeFromFavorites(index) {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    favorites.splice(index, 1);
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+    loadFavorites(); // Обновляем список после удаления
+}
+
+window.onload = loadFavorites;
+</script>
+</body>
+</html>

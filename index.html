@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pumpi</title>
+<!-- Манифест для PWA -->
+<link rel="manifest" href="manifest.json" />
+
+<!-- Стиль -->
+<link rel="stylesheet" href="style.css" />
+
+<!-- Иконки для PWA -->
+<link rel="icon" href="Логотип/Логотип2 .5.png" sizes="192x192" type="image/png" />
+<link rel="apple-touch-icon" href="icon-512.png" />
+</head>
+<body class="body">
+<header class="header">
+    
+    <div class="container_header1">
+        <div class="container_container1">
+            <img src="Логотип/Логотип2.png" alt="Лого" class="header_img">
+            <p class="header_text1">Pumpi</p>
+        </div>
+        <div class="container_header2">
+            <h2 class="header_title2">WANNA GOOD MUSIC</h2>
+            <p class="header_text2">then join us</p>
+        </div>
+        <ul class="header_list">
+            <li class="header_item"><a href="index.html">Главная</a></li>
+            <li class="header_item"><a href="favorites.html">Избранное</a></li>
+            <li class="header_item"><a href="history.html">История</a></li>
+        </ul>
+    </div>
+    
+</header>
+<main class="main">
+
+    <section class="main_section2">
+        <h1 class="main_title2">Популярное</h1>
+        <div class="container_main_au">
+
+            <div class="container_au1">
+                <img src="Фото/mp31(1).jpeg" alt="au1" class="img_au1" />
+                <div class="au1_1">
+                    <form class="main_au_btn1" action="index_au1.html">
+                        <button class="au1_btn">Adam G - I_Hate_Everyt...</button>
+                    </form>
+                    <audio controls class="au1" id="track-info1" data-id="1">
+                        <source src="Музыка/Three_Days_Grace_-_I_Hate_Everything_About_You_47958582.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button onclick="addToFavorites(1)" class="btn2_main">Добавить в избранное</button>
+                </div>
+            </div>
+            <div class="container_au1">
+                <img src="Фото/mp31(1).jpeg" alt="au1" class="img_au1" />
+                <div class="au1_1">
+                    <form class="main_au_btn1" action="index_au1.html">
+                        <button class="au1_btn">In the End - Linkin Park</button>
+                    </form>
+                    <audio controls class="au1" id="track-info2" data-id="2">
+                        <source src="Музыка/Linkin_Park_-_In_The_End_47828874.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button onclick="addToFavorites(2)" class="btn2_main">Добавить в избранное</button>
+                </div>
+            </div>
+            <div class="container_au1">
+                <img src="Фото/mp31(1).jpeg" alt="au1" class="img_au1" />
+                <div class="au1_1">
+                    <form class="main_au_btn1" action="index_au1.html">
+                        <button class="au1_btn">Numb - Linkin Park</button>
+                    </form>
+                    <audio controls class="au1" id="track-info3" data-id="3">
+                        <source src="Музыка/Linkin_Park_-_Numb_47828673.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button onclick="addToFavorites(3)" class="btn2_main">Добавить в избранное</button>
+                </div>
+            </div>
+            <div class="container_au1">
+                <img src="Фото/mp31(1).jpeg" alt="au1" class="img_au1" />
+                <div class="au1_1">
+                    <form class="main_au_btn1" action="index_au1.html">
+                        <button class="au1_btn">Nirvana - Smells like...</button>
+                    </form>
+                    <audio controls class="au1" id="track-info42" data-id="4">
+                        <source src="Музыка/smells-like-teen-spirit.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button onclick="addToFavorites(4)" class="btn2_main">Добавить в избранное</button>
+                </div>
+            </div>
+            <div class="container_au1">
+                <img src="Фото/mp31(1).jpeg" alt="au1" class="img_au1" />
+                <div class="au1_1">
+                    <form class="main_au_btn1" action="index_au1.html">
+                        <button class="au1_btn">I_Got_Love - Мияги,Эндшпиль...</button>
+                    </form>
+                    <audio controls class="au1" id="track-info42" data-id="4">
+                        <source src="Музыка/Miyagi_Rem_Digga_-_I_Got_Love_47828425.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button onclick="addToFavorites(4)" class="btn2_main">Добавить в избранное</button>
+                </div>
+            </div>
+            <div class="container_au1">
+                <img src="Фото/mp31(1).jpeg" alt="au1" class="img_au1" />
+                <div class="au1_1">
+                    <form class="main_au_btn1" action="index_au1.html">
+                        <button class="au1_btn">Грибы - Тает лёд</button>
+                    </form>
+                    <audio controls class="au1" id="track-info42" data-id="4">
+                        <source src="Музыка/Griby_-_Taet_Ljod_63903270.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button onclick="addToFavorites(4)" class="btn2_main">Добавить в избранное</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_section1">
+        <div class="container_main1">
+            <div class="container_main2">
+                <h1 class="main_title1">Pumpi</h1>
+                <p class="main_text1">Музыкальный сервис , который позволит вам слушить ваши любимый треки , а также добавлять свои  абсолютно бесплатно.</p>
+            </div>
+        </div>
+    </section>
+    
+
+</main>
+
+
+
+
+
+
+<footer class="footer">
+    <ul class="footer_list">
+        <li class="footer_item">
+            <form action="index.html">
+                <button class="btn_footer">
+                    <img src="Фото/main.jpg" alt="Главная" class="footer_img" />
+                    
+                </button>
+            </form>
+        </li>
+        <li class="footer_item">
+            <form action="favorites.html">
+                <button class="btn_footer">
+                    <img src="Фото/like.png" alt="Избранное" class="footer_img" />
+                    
+                </button>
+            </form>
+        </li>
+        <li class="footer_item">
+            <form action="history.html">
+                <button class="btn_footer">
+                    <img src="Фото/history.jpg" alt="История" class="footer_img" />
+                    
+                </button>
+            </form>
+        </li>
+    </ul>
+</footer>
+<!-- Регистрация сервис-воркера -->
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('Service Worker зарегистрирован', reg))
+      .catch(err => console.log('Ошибка регистрации service worker', err));
+  });
+}
+</script>
+<script>
+function addToFavorites(trackId) {
+    // Берем текущий список
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    
+    // Проверка, есть ли уже трек
+    if (favorites.some(item => item.id === trackId)) {
+        alert('Этот трек уже в избранном.');
+        return;
+    }
+
+    // Создаем объект с данными трека
+    const tracksData = {
+        1: {
+            title: "Adam Gonte - I_Hate_Everything...",
+            src: "Музыка/Three_Days_Grace_-_I_Hate_Everything_About_You_47958582.mp3"
+        },
+        2: {
+            title: "In the End - Linkin Park",
+            src: "Музыка/Linkin_Park_-_In_The_End_47828874.mp3"
+        },
+        3: {
+            title: "Numb - Linkin Park",
+            src: "Музыка/Linkin_Park_-_Numb_47828673.mp3"
+        },
+        4: {
+            title: "Nirvana - Smells like teen spirit",
+            src: "Музыка/smells-like-teen-spirit.mp3"
+        }
+    };
+
+    const track = tracksData[trackId];
+
+    if (track) {
+        // Добавляем объект с данными
+        favorites.push({ id: trackId, title: track.title, src: track.src });
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+        alert('Трек добавлен в избранное!');
+    } else {
+        alert('Трек не найден.');
+    }
+}
+</script>
+<script>
+    // Функция для добавления трека
+function addTrackToHistory(trackName) {
+  const historyKey = 'musicHistory';
+  const now = new Date().getTime();
+
+  // Получаем текущую историю
+  let history = JSON.parse(localStorage.getItem(historyKey)) || [];
+
+  // Добавляем новый трек
+  history.push({ name: trackName, timestamp: now });
+
+  // Сохраняем обратно
+  localStorage.setItem(historyKey, JSON.stringify(history));
+}
+
+// Функция для очистки устаревших треков
+function cleanOldTracks() {
+  const historyKey = 'musicHistory';
+  const now = new Date().getTime();
+  const fiveDaysMs = 5 * 24 * 60 * 60 * 1000; // 5 дней в миллисекундах
+
+  let history = JSON.parse(localStorage.getItem(historyKey)) || [];
+
+  // Фильтруем треки, которые не старше 5 дней
+  history = history.filter(track => (now - track.timestamp) <= fiveDaysMs);
+
+  // Обновляем хранилище
+  localStorage.setItem(historyKey, JSON.stringify(history));
+}
+
+// Перед добавлением нового трека вызывайте cleanOldTracks()
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const allAudios = document.querySelectorAll('audio');
+
+    allAudios.forEach(audio => {
+      audio.addEventListener('play', () => {
+        allAudios.forEach(otherAudio => {
+          if (otherAudio !== audio) {
+            otherAudio.pause();
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<!-- Манифест (можно вставить прямо сюда, или создать отдельный файл) -->
+<script type="application/json" id="manifest">
+{
+  "name": "Pumpi",
+  "short_name": "Pumpi",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#222",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+</script>
+
+<!-- Вставка для загрузки манифеста -->
+<script>
+const manifestEl = document.createElement('link');
+manifestEl.rel = 'manifest';
+manifestEl.href = 'manifest.json'; // создадим отдельно файл
+document.head.appendChild(manifestEl);
+</script>
+</body>
+
+ 
+
+
+
+
+
